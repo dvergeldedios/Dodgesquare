@@ -12,4 +12,9 @@ public class PlayButton : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Settings Menu");
     } 
+
+    public void QuitButtonGame()
+    {
+        Application.Quit();
+    }
 }
