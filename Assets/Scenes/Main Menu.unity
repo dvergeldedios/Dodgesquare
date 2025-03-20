@@ -278,8 +278,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1647363147}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: PlayButtonGame
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -898,8 +898,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1647363147}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: SettingsButtonGame
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: SettingsButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1031,8 +1031,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1647363147}
-        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
-        m_MethodName: QuitButtonGame
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1228,7 +1228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647363142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a485fd6f54a3bd54ba0c064b9e8cbbd6, type: 3}
+  m_Script: {fileID: 11500000, guid: e5101a84d621741bab69bdc73256a89c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1662560025
