@@ -43,7 +43,7 @@ public class FallingObject
         Rigidbody2D rb = Obj.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.velocity = Velocity;
+            rb.linearVelocity = Velocity;
         }
     }
 }
