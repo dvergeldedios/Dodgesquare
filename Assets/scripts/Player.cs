@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class Player
 {
+    // Encapsulated fields (private)
     private float _moveSpeed;
     private float _jumpForce;
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private Collider2D col;
 
-    // Constructor
+    // Constructor, (Composition: Player depends on Rigidbody2D and Collider2D classes)
     public Player(float Speed, float JumpForce, Rigidbody2D rigidbody, Collider2D collider)
     {
         this._moveSpeed = Speed;
@@ -52,7 +53,7 @@ public class Player
 }
 
 
-//Encapsulation: moveSpeed is private and can only be accessed  within Player class.
+//Encapsulation: objects are private can only be accessed through public methods
 //Classes and Objects: player class is created with a constructor and instantiated in `PlayerMovement`
 //Constructor: player class has a constructor that takes speed and Rigidbody2D as parameters
-//Composition: playermovemen class uses an instance of `Player` instead of doing movement directl
+//Composition: Contructor uses instance of rigidbody2d and collider2d classes
