@@ -4,20 +4,22 @@ public class Player
 {
     private float _moveSpeed;
     private float _jumpForce;
+    private int _health;
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private Collider2D col;
 
     // Constructor
-    public Player(float Speed, float JumpForce, Rigidbody2D rigidbody, Collider2D collider)
+    public Player(float Speed, float JumpForce, int Health, Rigidbody2D rigidbody, Collider2D collider)
     {
         this._moveSpeed = Speed;
         this._jumpForce = JumpForce;
+        this._health = Health;
         this.rb = rigidbody;
         this.col = collider;
         
         // Increase gravity
-        rb.gravityScale = 2f;
+        rb.gravityScale = 1f;
     }
 
     // Method for handling horizontal movement input only
@@ -47,6 +49,16 @@ public class Player
         if (Mathf.Abs(rb.linearVelocity.y) < 0.001f) 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, _jumpForce);
+        }
+    }
+
+    public void TakeDamage(int damage) 
+    {
+        _health -= damage;
+        Debug.Log($"Player health: {this._health}, Damage taken: {damage}");
+        if (_health <= 0) 
+        {
+            Debug.Log($"Ur dead");
         }
     }
 }

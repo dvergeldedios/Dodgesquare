@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>(); 
         
         //new player
-        player = new Player(5f, 10f, rb, col);
+        player = new Player(5f, 8f, 100, rb, col);
         // player = GetComponent<Player>();
     }
 
