@@ -5,21 +5,27 @@ public class Player
     // Encapsulated fields (private)
     private float _moveSpeed;
     private float _jumpForce;
+    private int _health;
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private Collider2D col;
 
     public Player(float Speed, float JumpForce, Rigidbody2D rigidbody, Collider2D collider)
     public Player(float Speed, float JumpForce, int Health, Rigidbody2D rigidbody, Collider2D collider)
->>>>>>> 8f6fc20d215da91ea29c3978dea6f51707b32c69
     {
         this._moveSpeed = Speed;
         this._jumpForce = JumpForce;
+        this._health = Health;
         this.rb = rigidbody;
         this.col = collider;
         
         // Increase gravity
         rb.gravityScale = 2f;
+    }
+
+    public int GetHealth()
+    {
+        return this._health;
     }
 
     // Method for handling horizontal movement input only
