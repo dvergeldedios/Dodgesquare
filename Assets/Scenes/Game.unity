@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc244ec00f2c54b298592b59ede9c7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FillImage: {fileID: 0}
+  FillImage: {fileID: 1526768175}
   PlayerHealthBar: {fileID: 761459603}
 --- !u!1 &1136905612
 GameObject:
