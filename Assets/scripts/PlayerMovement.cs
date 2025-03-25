@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Player player; 
+    public HealthBar healthBar;
+    public Player player; 
     void Start()
     {
         // get the rigidbody2D & collider2D component attached to the game object
@@ -10,14 +11,18 @@ public class PlayerMovement : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>(); 
         
         //new player
-        player = new Player(5f, 10f, rb, col);
+        player = new Player(7f, 10f, 100, rb, col);
         // player = GetComponent<Player>();
+
+        healthBar.SetMaxHealth(100);
     }
 
     void Update()
     {
         // process input for each frame for player  movement
         player.HandleInput();
+        healthBar.SetHealth(player.GetHealth());
+        healthBar.UpdateFillColor();
     }
 
     void FixedUpdate()

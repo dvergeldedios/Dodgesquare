@@ -9,8 +9,9 @@ public class Player
     private Rigidbody2D rb;
     private Collider2D col;
 
-    // Constructor, (Composition: Player depends on Rigidbody2D and Collider2D classes)
     public Player(float Speed, float JumpForce, Rigidbody2D rigidbody, Collider2D collider)
+    public Player(float Speed, float JumpForce, int Health, Rigidbody2D rigidbody, Collider2D collider)
+>>>>>>> 8f6fc20d215da91ea29c3978dea6f51707b32c69
     {
         this._moveSpeed = Speed;
         this._jumpForce = JumpForce;
@@ -48,6 +49,17 @@ public class Player
         if (Mathf.Abs(rb.linearVelocity.y) < 0.001f) 
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, _jumpForce);
+        }
+    }
+
+    public void TakeDamage(int damage) 
+    {
+        _health -= damage;
+        Debug.Log($"Player health: {this._health}, Damage taken: {damage}");
+        if (_health <= 0) 
+        {
+            Debug.Log($"Ur dead");
+            // add death screen thing
         }
     }
 }
