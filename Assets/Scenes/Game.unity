@@ -456,7 +456,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 44773527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b58cbe8deecd148b5b4663b822431f, type: 3}
+  m_Script: {fileID: 11500000, guid: c06cc9e3ae7f9294a91272ccc08c5d56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 296167023}
@@ -511,7 +511,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Timer:'
+  m_Text: 'Score:'
 --- !u!222 &296167024
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -536,7 +536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 308, y: 183.93}
+  m_AnchoredPosition: {x: 293, y: 183.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &448731611
