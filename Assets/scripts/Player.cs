@@ -19,7 +19,12 @@ public class Player
         this.col = collider;
         
         // Increase gravity
-        rb.gravityScale = 1f;
+        rb.gravityScale = 2f;
+    }
+
+    public int GetHealth()
+    {
+        return this._health;
     }
 
     // Method for handling horizontal movement input only
@@ -59,6 +64,7 @@ public class Player
         if (_health <= 0) 
         {
             Debug.Log($"Ur dead");
+            // add death screen thing
         }
     }
 }
