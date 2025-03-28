@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class FallingObject
 {
-    // Private fields to store speed and angle ranges.
     private float _minSpeed;
     private float _maxSpeed;
     private float _minAngle;
