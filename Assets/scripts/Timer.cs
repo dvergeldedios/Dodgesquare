@@ -15,11 +15,11 @@ public class GameTimer : MonoBehaviour
         {
             // set nextincreasetime based on difficulty
             if (diff == 0) {
-                nextIncreaseTime = 35f;  // Easy
+                nextIncreaseTime = 45f;  // Easy
             } else if (diff == 1) {
-                nextIncreaseTime = 21f;  // Med
+                nextIncreaseTime = 22.5f;  // Med
             } else {
-                nextIncreaseTime = 8.5f;  // Hard
+                nextIncreaseTime = 8.25f;  // Hard
             }
         }
 

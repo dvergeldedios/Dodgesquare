@@ -23,23 +23,23 @@ public class FallingObjectSpawner : MonoBehaviour
         if (diff == 0) 
         {
             _spawnInterval = 2f;
-            _reductionRate = 0.025f;
+            _reductionRate = 0.0225f;
             _minSpeedBase = 2f; // max at 7
             _minSpeedCap = 4f; // max at 8
             _maxSpawnInterval = 0.25f; // 4 max per sec
 
-            _maxMinSpeed = 8f;
-            _maxMaxSpeed = 9f;
+            _maxMinSpeed = 8.5f;
+            _maxMaxSpeed = 9.5f;
         }
 
         // hard
         else if (diff == 2) 
         {
-            _spawnInterval = 1.5f;
-            _reductionRate = 0.03f;
+            _spawnInterval = 1.75f;
+            _reductionRate = 0.029f;
             _minSpeedBase = 4f; // max at 13
             _minSpeedCap = 6f; // max at 14
-            _maxSpawnInterval = 0.19f; // 5.something max per sec
+            _maxSpawnInterval = 0.195f; // 5.something max per sec
 
             _maxMinSpeed = 12f;
             _maxMaxSpeed = 13f;
