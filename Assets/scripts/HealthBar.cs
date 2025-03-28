@@ -27,7 +27,7 @@ public class HealthBar : MonoBehaviour
         if (PlayerHealthBar.value <= 0)
         {
             FillImage.color = Color.black;
-            SceneManager.LoadSceneAsync("Lose Screen"); 
+            // SceneManager.LoadSceneAsync("Lose Screen"); 
         }
         else if (hpPercent <= 0.30f)
         {

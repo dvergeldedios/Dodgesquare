@@ -11,10 +11,9 @@ public class PlayerMovement : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>(); 
         
         //new player
-        player = new Player(7f, 10f, 100, rb, col);
-        // player = GetComponent<Player>();
+        player = new Player(9f, 10f, 120, rb, col);
 
-        healthBar.SetMaxHealth(100);
+        healthBar.SetMaxHealth(120);
     }
 
     void Update()
