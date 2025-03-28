@@ -10,7 +10,6 @@ public class Player
     private Rigidbody2D rb;
     private Collider2D col;
 
-    public Player(float Speed, float JumpForce, Rigidbody2D rigidbody, Collider2D collider)
     public Player(float Speed, float JumpForce, int Health, Rigidbody2D rigidbody, Collider2D collider)
     {
         this._moveSpeed = Speed;
